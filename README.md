@@ -1,3 +1,7 @@
+#Trying out NEXT.js
+
+We been learning react for about 2 months and now Im trying out Next.js to see how it works
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
