@@ -1,5 +1,6 @@
 import styles from '../styles/main.module.css'
 import Nav from './Navbar'
+
 const Layout = ({children}) => {
     return ( 
         <>

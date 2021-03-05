@@ -33,15 +33,16 @@
 }
 
 .nav ul li {
-    color: rgb(8, 59, 21);
+    color: rgb(3, 39, 12);
     list-style: none;
     font-size: 1.4rem;
-    margin-right: 2rem;
-    text-shadow: 1px 1px 3px gray;
+    margin-right: 4rem;
+    text-shadow: 2px 2px 3px rgb(36, 36, 36);
     padding: 4px 6px;
+    font-weight: lighter;
 }
 
-.nav ul li:hover {
+.nav li:hover {
     color: rgb(158, 209, 238);
     filter: drop-shadow(1px 1px 2px black);
 }
