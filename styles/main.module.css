@@ -1,6 +1,7 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  background: rgba(141, 121, 65, 0.959);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,7 +13,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 

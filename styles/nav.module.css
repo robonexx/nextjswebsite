@@ -1,0 +1,42 @@
+.header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 1rem 2rem;
+    font-size: 2rem;
+    color: rgb(68, 68, 67);
+    text-shadow: 1px 1px solid white;
+}
+
+.nav {
+    margin: 1.2rem 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(120deg, rgba(0,0,0,0.6), transparent);
+    box-shadow: -5px 6px 16px black;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav ul li {
+    color: rgb(8, 59, 21);
+    list-style: none;
+    font-size: 1.4rem;
+    margin-right: 2rem;
+    text-shadow: 1px 1px 3px gray;
+}
