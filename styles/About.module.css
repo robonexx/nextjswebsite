@@ -3,7 +3,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: radial-gradient(ellipse at bottom, rgb(15, 15, 15), rgb(11, 6, 37));
+    background-image: radial-gradient(ellipse at bottom, rgb(212, 243, 220), rgb(3, 70, 36));
 }
 
 .about h1 {

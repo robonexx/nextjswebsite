@@ -5,7 +5,7 @@ export default function About() {
     return (
         <div className={aboutStyles.about}>
             <h1>So who Am <br/>-I-?</h1>
-            <h3>Nooo boooody knooooows...</h3>
+            <h3 className="title1">Dr GreenThumb... ;D</h3>
             <p className='para'>
         While learning webdevelopment I will try out more of the frameworks
         and such and such. Keeping my mind open to learn new things. <br/>
@@ -17,11 +17,15 @@ export default function About() {
       <style jsx>
         {`
         .title1 {
-          margin: 4rem 4rem;
+          color: #2e3e4e;
+          text-align: center;
+          font-size: 3rem;
         }
         .para {
-          font-size: 2rem;
-          margin: 0 8rem;
+          font-size: 1.2rem;
+          padding: 1rem 20rem;
+          color: #1e2e3e;
+          letter-spacing: 0.2rem;
         }
         `}
       </style>

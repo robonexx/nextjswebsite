@@ -1,0 +1,25 @@
+.contact {
+    width: 100vw;
+    height: 70vh;
+    background-image: url(../images/life.jpg);
+    background-position: center center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact h1 {
+    position: absolute;
+    top: 30vh;
+    text-align: center;
+    font-size: 4rem;
+    color: #fafafa;
+    text-shadow: 1px 1px solid gray;
+}
+.contact h3 {
+    position: absolute;
+    top: 45vh;
+    color: #fafafa;
+    font-size: 2rem;
+}
