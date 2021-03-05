@@ -1,6 +1,5 @@
 .wrapper {
-  height: 100vh;
-  width: 100%;
+  width: 100vw;
   background: rgba(141, 121, 65, 0.959);
   display: flex;
   flex-direction: column;
@@ -9,6 +8,8 @@
 }
 
 .main {
+  width: 100vw;
+  height: 100%;
   padding: 5rem 0;
   flex: 1;
   display: flex;
