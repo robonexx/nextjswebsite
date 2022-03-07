@@ -11,7 +11,7 @@ const NavMobile = () => {
 
     return (
         
-        <div className={` ${navstyles.navBtn} ${active ? '' : navstyles.open } `} onClick={handleClick}>
+        <div className={` ${navstyles.navBtn} ${active ? navstyles.open : navstyles.navBtn } `} onClick={handleClick} >
                     <div className={navstyles.line}></div>
                 </div>
            

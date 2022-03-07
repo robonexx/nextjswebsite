@@ -5,11 +5,18 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "build:css": "postcss styles/tailwind.css -o styles/main.css",
+    "build:watch": "postcss styles/tailwind.css -o styles/main.css --watch",
+    "prod:build": "NODE_ENV=production npm run build:css -and npm run build"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.2",
     "next": "10.0.8",
+    "postcss": "^8.4.8",
+    "postcss-cli": "^9.1.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "tailwindcss": "^3.0.23"
   }
 }
