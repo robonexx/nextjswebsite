@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 100vw;
+    width: 100%;
     height: 6vh;
     display: flex;
     justify-content: space-between;
@@ -14,7 +14,7 @@
 }
 
 .logo {
-    margin: 0.5rem 2rem;
+    padding: 0 2rem;
     font-size: 2rem;
     color: rgb(68, 68, 67);
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
@@ -53,18 +53,17 @@
 
 
 .navBtn {
-    position: absolute;
-    top: 1.5rem;
-    right: 0rem;
+    position: relative;
     margin-right: 2rem;
     cursor: pointer;
 }
 
 .line {
+    position: relative;
     width: 2rem;
     height: 2px;
     margin: 3px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     position: relative;
     transition: all 0.4s cubic-bezier(0.75, 0.2, 0.05, 1);
 
@@ -75,7 +74,7 @@
     width: 1.6rem;
     height: 2px;
     
-    background-color: black;
+    background-color: rgb(209, 209, 209);
     transform: translateY(-.5rem);
     
 
@@ -85,7 +84,7 @@
     position: absolute;
     width: 1.4rem;
     height: 2px;
-    background-color: black;
+    background-color: rgb(184, 184, 184);
     transform: translateY(.5rem);
 }
 

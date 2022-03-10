@@ -1,5 +1,6 @@
 import navstyles from '../styles/nav.module.css';
 import Link from 'next/link';
+import NavMobile from './NavMobile';
 
 const Navbar = () => {
   return (
@@ -21,6 +22,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      <NavMobile />
     </div>
   );
 };

@@ -1,18 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap');
 .about {
-    position: relative;
     width: 100vw;
     height: 100%;
     background-image: radial-gradient(ellipse at bottom, rgb(212, 243, 220), rgb(3, 70, 36));
 }
 
+.about_wrapper {
+    width: 100%;
+    padding: 0 2rem;
+}
+
 .about h1 {
     text-align: center;
     font-family: 'Signika', sans-serif;
-    font-size: 8rem;
-    letter-spacing: 1rem;
+    font-size: 6rem;
+    letter-spacing: 0.1rem;
+    line-height: 6.5rem;
+    font-weight: bolder;
     height: fit-content;
-    background-image: url(../images/nature.jpg);
+    /* background-image: url(../images/nature.jpg); */
+    background: linear-gradient(120deg, rgb(243, 135, 34), rgb(213, 214, 119));
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
