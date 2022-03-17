@@ -1,11 +1,13 @@
 .wrapper {
+  margin-top: 16rem;
   width: 100vw;
   min-height: 100vh;
-  background: rgba(243, 230, 195, 0.959);
+  background: rgba(0, 0, 0, 0.959);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .main {

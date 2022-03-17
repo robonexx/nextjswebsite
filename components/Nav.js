@@ -1,17 +1,42 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import NavMobile from './NavMobile';
+import styles from '../styles/nav.module.css'
 
 export const Nav = () => {
   const [active, setActive] = useState(false);
+  const navbar = useRef(null);
 
+  
   const handleClick = () => {
     setActive(!active);
   };
 
+
+  
+  useEffect(() => {
+    let prevScrollpos = window.pageYOffset;
+
+    window.addEventListener("scroll", () => {
+      let currentScrollPos = window.pageYOffset;
+      
+        if (prevScrollpos > currentScrollPos) {
+          navbar.current.classList.remove(`${styles.nav_hidden}`);
+          navbar.current.classList.add(`${styles.nav_show}`)
+        }
+        else {
+          navbar.current.classList.add(`${styles.nav_hidden}`);
+          navbar.current.classList.remove(`${styles.nav_show}`)
+          
+      }
+      prevScrollpos = currentScrollPos;
+      })
+  },[]);
+
+
   return (
     <>
-      <nav className='flex items-center flex-wrap bg-black p-3 '>
+      <nav className={`flex items-center flex-wrap bg-black p-3 mt-8 ${styles.nav_show} `} ref={navbar}>
         <Link href='/'>
           <a className='inline-flex items-center p-2 mr-4 '>
             <span className='text-xl text-white font-bold uppercase tracking-wide'>
@@ -24,26 +49,13 @@ export const Nav = () => {
           onClick={handleClick}
         >
           <NavMobile />
-          {/* <svg
-            className='w-6 h-6'
-            fill='none'
-            stroke='currentColor'
-            viewBox='0 0 24 24'
-            xmlns='http://www.w3.org/2000/svg'
-          >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth={2}
-              d='M4 6h16M4 12h16M4 18h16'
-            />
-          </svg> */}
+         
         </button>
         {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
         <div
           className={`${
             active ? '' : 'hidden'
-          }  w-full lg:inline-flex lg:flex-grow lg:w-auto`}
+          }  w-full lg:inline-flex lg:flex-grow lg:w-auto ${styles.nav_bg}`}
         >
           <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-end  flex flex-col lg:h-auto'>
             <Link href='/'>
