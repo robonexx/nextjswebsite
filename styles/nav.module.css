@@ -37,6 +37,7 @@
     transform: translateY(0);
     z-index: 100;
     transition: 0.4s ease-in-out;
+    border-bottom: 1rem solid #ec4d37;
 }
 
 .nav_hidden {
