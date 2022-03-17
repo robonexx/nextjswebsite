@@ -37,12 +37,12 @@
     transform: translateY(0);
     z-index: 100;
     transition: 0.4s ease-in-out;
-    border-bottom: 1rem solid #ec4d37;
+    border-bottom: 0.25rem solid #ec4d37;
 }
 
 .nav_hidden {
     translate: transformY(-5rem);
-    border-bottom: 1rem solid #ec4d37;
+    border-bottom: 5rem solid #ec4d37;
     opacity: 0.7;
     transition: 0.4s ease-in-out;
 }

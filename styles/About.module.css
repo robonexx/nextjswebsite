@@ -2,7 +2,7 @@
 .about {
     width: 100vw;
     height: 100%;
-    background-image: radial-gradient(ellipse at bottom, rgb(212, 243, 220), rgb(3, 70, 36));
+    background-image: radial-gradient(ellipse at bottom, rgb(185, 95, 21), rgb(47, 199, 123));
 }
 
 .about_wrapper {
@@ -18,7 +18,6 @@
     line-height: 6.5rem;
     font-weight: bolder;
     height: fit-content;
-    /* background-image: url(../images/nature.jpg); */
     background: linear-gradient(120deg, rgb(243, 135, 34), rgb(213, 214, 119));
     background-repeat: no-repeat;
     background-position: bottom;

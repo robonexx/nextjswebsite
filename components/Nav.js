@@ -36,7 +36,7 @@ export const Nav = () => {
 
   return (
     <>
-      <nav className={`flex items-center flex-wrap bg-black p-3 mt-8 ${styles.nav_show} `} ref={navbar}>
+      <nav className={`flex items-center flex-wrap bg-black pt-3 pb-3 ${styles.nav_show} `} ref={navbar}>
         <Link href='/'>
           <a className='inline-flex items-center p-2 mr-4 '>
             <span className='text-xl text-white font-bold uppercase tracking-wide'>

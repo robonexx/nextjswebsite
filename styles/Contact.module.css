@@ -1,7 +1,7 @@
 .contact {
     width: 100vw;
     height: 94vh;
-    background-image: url(../images/life.jpg);
+    background-color: #ec4d37;
     background-size: contain;
     background-position: center center;
     display: flex;
