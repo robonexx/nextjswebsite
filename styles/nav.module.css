@@ -40,8 +40,9 @@
 }
 
 .nav_hidden {
-    translate: transformY(-100px);
-    opacity: 0;
+    translate: transformY(-5.5rem);
+    border-bottom: 0.6rem solid #ec4d37;
+    opacity: 0.7;
     transition: 0.4s ease-in-out;
 }
 
